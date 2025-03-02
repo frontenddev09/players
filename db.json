@@ -1,0 +1,55 @@
+{
+  "players": [
+    {
+      "id": "5768f32b-c465-40d8-ad2c-a9ab5659616d",
+      "name": "Ozodbek",
+      "country": "Asia",
+      "continent": "America"
+    },
+    {
+      "id": "6c963ba5-63b6-4443-a4a3-dc869d89884b",
+      "name": "Ozodbek",
+      "country": "Asia",
+      "continent": "Asia"
+    },
+    {
+      "id": "b4c8a156-8208-4e11-a191-021104065326",
+      "name": "Ozodbek",
+      "country": "Asia",
+      "continent": "Africa"
+    },
+    {
+      "id": "d7c0fd79-a686-4a24-92d2-bc52d16115b2",
+      "name": "Ozodbek",
+      "country": "Asia",
+      "continent": "Europe"
+    }
+  ],
+  "filters": [
+    {
+      "id": "all",
+      "label": "All",
+      "classes": "bg-gradient-to-r from-black to-slate-600 rounded-l-md"
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "classes": "bg-gradient-to-r from-blue-500 to-blue-700"
+    },
+    {
+      "id": "asia",
+      "label": "Asia",
+      "classes": "bg-gradient-to-r from-green-500 to-green-700"
+    },
+    {
+      "id": "africa",
+      "label": "Africa",
+      "classes": "bg-gradient-to-r from-yellow-500 to-yellow-700"
+    },
+    {
+      "id": "america",
+      "label": "America",
+      "classes": "bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-r-md"
+    }
+  ]
+}
