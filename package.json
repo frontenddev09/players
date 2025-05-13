@@ -9,7 +9,7 @@
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
 		"json-server": "json-server --watch db.json --port 3000",
-        "deploy": "concurrently \"npm run json-server\" \"npm run build && npm run start\""
+		"deploy": "npm run json-server"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.5.0",
