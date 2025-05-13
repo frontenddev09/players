@@ -62,7 +62,7 @@ const PlayersList = () => {
 	}
 
 	return (
-		<div className='space-y-5 overflow-scroll h-[80%] p-4'>
+		<div className='space-y-5 p-4 h-[80%] overflow-scroll'>
 			{renderPlayers()}
 		</div>
 	)
