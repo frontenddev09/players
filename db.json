@@ -1,0 +1,37 @@
+{
+  "players": [
+    {
+      "id": "11c461dc-5036-4fd9-9eac-8c7163731ef1",
+      "name": "Mohammad Salah",
+      "country": "Egypt",
+      "continent": "Europe"
+    }
+  ],
+  "filters": [
+    {
+      "id": "all",
+      "label": "All",
+      "classes": "bg-gradient-to-r from-black to-slate-600 rounded-l-md"
+    },
+    {
+      "id": "europe",
+      "label": "Europe",
+      "classes": "bg-gradient-to-r from-blue-500 to-blue-700"
+    },
+    {
+      "id": "asia",
+      "label": "Asia",
+      "classes": "bg-gradient-to-r from-green-500 to-green-700"
+    },
+    {
+      "id": "africa",
+      "label": "Africa",
+      "classes": "bg-gradient-to-r from-yellow-500 to-yellow-700"
+    },
+    {
+      "id": "america",
+      "label": "America",
+      "classes": "bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-r-md"
+    }
+  ]
+}
