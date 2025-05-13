@@ -5,12 +5,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build json-server --watch db.json --port 3000",
+		"build": "vite build",
 		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview",
-		"json-server": "json-server --watch db.json --port 3000",
-		"deploy": "npm run json-server",
-		"predeploy": "npm run json-server"
+		"preview": "vite preview"
+
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^2.5.0",
