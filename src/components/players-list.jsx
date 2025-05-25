@@ -5,7 +5,8 @@ import Error from './error'
 import Empty from './empty'
 import PlayersListItem from './players-list-item'
 import { createSelector } from 'reselect'
-import { fetchPlayers, playersDeleted } from '../slices/players-slice'
+import { fetchPlayers, playerDeleted } from '../slices/players-slice'
+import request from '../hooks/use-http'
 
 const PlayersList = () => {
 	const dispatch = useDispatch()
@@ -40,7 +41,9 @@ const PlayersList = () => {
 	}, [])
 
 	const onDelete = useCallback(id => {
-		dispatch(playersDeleted(id))
+		request(`http://localhost:8080/players/${id}`, 'DELETE')
+			.then(() => dispatch(playerDeleted(id)))
+			.catch(e => console.log(e))
 	}, [])
 
 	if (playersLoadingStatus === 'loading') {

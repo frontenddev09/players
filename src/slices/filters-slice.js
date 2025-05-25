@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { useHttp } from '../hooks/use-http'
+import request from '../hooks/use-http'
 
 const initialState = {
 	filters: [],
@@ -10,7 +10,7 @@ const initialState = {
 export const filtersFetch = createAsyncThunk(
 	'filters/filters-fetch',
 	async () => {
-		const { request } = useHttp()
+		// const { request } = useHttp()
 		return request('http://localhost:8080/filters')
 	}
 )

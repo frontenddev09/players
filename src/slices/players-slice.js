@@ -1,10 +1,9 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { useHttp } from '../hooks/use-http'
+import request from '../hooks/use-http'
 
 export const fetchPlayers = createAsyncThunk(
 	'players/fetch-players',
 	async () => {
-		const { request } = useHttp()
 		return request('http://localhost:8080/players')
 	}
 )
@@ -19,7 +18,7 @@ const playersSlice = createSlice({
 		playerCreated: (state, action) => {
 			state.players.push(action.payload)
 		},
-		playersDeleted: (state, action) => {
+		playerDeleted: (state, action) => {
 			state.players = state.players.filter(
 				player => player.id !== action.payload
 			)
@@ -40,7 +39,7 @@ const playersSlice = createSlice({
 	},
 })
 
-export const { playerCreated, playersDeleted } = playersSlice.actions
+export const { playerCreated, playerDeleted } = playersSlice.actions
 
 const players = playersSlice.reducer
 export default players

@@ -1,10 +1,9 @@
 import { v4 as uuidv4 } from 'uuid'
-import { useHttp } from '../hooks/use-http'
+import request from '../hooks/use-http'
 import { useDispatch, useSelector } from 'react-redux'
 import { playerCreated } from '../slices/players-slice'
 
 const PlayersAddForm = () => {
-	const { request } = useHttp()
 	const dispatch = useDispatch()
 	const { filters } = useSelector(state => state.filters)
 	const handleSubmit = e => {

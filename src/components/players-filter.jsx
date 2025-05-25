@@ -1,13 +1,11 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useHttp } from '../hooks/use-http'
 import Spinner from './spinner'
 import { activeFilterChanged, filtersFetch } from '../slices/filters-slice'
 
 const PlayersFilter = () => {
 	const dispatch = useDispatch()
 	const { filters, filtersLoadingStatus } = useSelector(state => state.filters)
-	const { request } = useHttp()
 
 	useEffect(() => {
 		dispatch(filtersFetch())
