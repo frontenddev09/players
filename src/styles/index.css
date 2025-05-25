@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+	background: url('../assets/bg.jpg') center / cover no-repeat;
+}
+
+/* ::-webkit-scrollbar { */
+/* display: none; */
+/* } */
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Scrollbar track (fondi) */
+::-webkit-scrollbar-track {
+	background: rgb(39, 87, 96);
+	border-radius: 5000px;
+}
+
+/* Scrollbar handle (harakatlanuvchi qismi) */
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(45deg, #00b4db, #0083b0);
+	border-radius: 10px;
+}
+
+/* Hover qilinganida */
+::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(45deg, #0083b0, #005f6b);
+}

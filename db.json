@@ -1,0 +1,55 @@
+{
+	"players": [
+		{
+			"id": "e23c0017-8b35-4840-8451-6e4f3e4180b5",
+			"name": "Cristiano Ronaldo",
+			"country": "Portugal",
+			"continent": "Europe"
+		},
+		{
+			"id": "391349a0-3f47-4e78-b543-afc652c8e99c",
+			"name": "Neymar Jr.",
+			"country": "Brazil",
+			"continent": "America"
+		},
+		{
+			"id": "3a58bc24-a625-4c43-8f39-9be7ca9b37ec",
+			"name": "Odil Akhmedov",
+			"country": "Uzbekistan",
+			"continent": "Asia"
+		},
+		{
+			"id": "252ec88f-8c23-4cd5-b282-70360e2fd3b3",
+			"name": "Mohammad Salah",
+			"country": "Egypt",
+			"continent": "Africa"
+		}
+	],
+	"filters": [
+		{
+			"id": "all",
+			"label": "All",
+			"classes": "bg-gradient-to-r from-slate-700 to-slate-900 rounded-l-md"
+		},
+		{
+			"id": "europe",
+			"label": "Europe",
+			"classes": "bg-gradient-to-r from-blue-500 to-blue-700"
+		},
+		{
+			"id": "asia",
+			"label": "Asia",
+			"classes": "bg-gradient-to-r from-green-500 to-green-700"
+		},
+		{
+			"id": "africa",
+			"label": "Africa",
+			"classes": "bg-gradient-to-r from-yellow-500 to-yellow-700"
+		},
+		{
+			"id": "america",
+			"label": "America",
+			"classes": "bg-gradient-to-r from-cyan-500 to-cyan-700 rounded-r-md"
+		}
+	]
+}
